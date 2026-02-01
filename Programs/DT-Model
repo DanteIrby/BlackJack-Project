@@ -1,0 +1,45 @@
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+
+# 1. Read the CSV file and load the data
+data = pd.read_csv('blackjack_results.csv')
+
+# 2. Preprocess the data: split it into features (X) and labels (y)
+# Note: You may need to modify this depending on the features you want to use for prediction
+X = data.drop(['actions', 'payout', 'bet_amount'], axis=1)
+y = data['actions']
+
+# Convert categorical columns to numeric using LabelEncoder
+categorical_columns = ['player_cards', 'split_cards', 'd_cards', 'result']
+encoders = {col: LabelEncoder() for col in categorical_columns}
+for col in categorical_columns:
+    X[col] = encoders[col].fit_transform(X[col])
+
+# 3. Split the data into a training set and a testing set
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=30)
+
+# 4. Train a Decision Tree Classifier using the training set
+clf = DecisionTreeClassifier()
+clf.fit(X_train, y_train)
+
+# 5. Test the trained model on the testing set and evaluate its performance
+y_pred = clf.predict(X_test)
+print("Accuracy:", accuracy_score(y_test, y_pred))
+
+# this is a test so use this to see if it predicts right
+test_game_state = {
+    'player_cards': '10, 10',
+    'split_cards': 'None',
+    'd_cards': '10, 2',
+    'result': 'Player Wins',
+}
+
+test_df = pd.DataFrame([test_game_state])
+for col in categorical_columns:
+    test_df[col] = encoder.fit_transform(test_df[col])
+# Predict the next move for the given game state
+predicted_move = clf.predict(test_df)
+print("Predicted move:", predicted_move[0])

@@ -1,0 +1,4 @@
+player_cards,split_cards,d_cards,actions,result,bet_amount,payout
+"[10, 7]",[],"[11, 10]",[],Dealer Wins,1000,-1000
+"[10, 5, 1]",[],"[8, 10]","['hit', 'stay']",Dealer Wins,2,-2
+"[10, 4]",[],"[10, 11]",[],Dealer Wins,50,-50

@@ -1,0 +1,23 @@
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+
+# Load the CSV file
+df = pd.read_csv('hands.csv')
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(df.drop('Counting_Cards', axis=1), df['Counting_Cards'], test_size=0.2)
+
+# Create a logistic regression model
+model = LogisticRegression()
+
+# Fit the model on the training data
+model.fit(X_train, y_train)
+
+# Make predictions on the testing data
+predictions = model.predict(X_test)
+
+# Print the accuracy score of the model
+accuracy = model.score(X_test, y_test)
+print(f"Accuracy: {accuracy}")
+
