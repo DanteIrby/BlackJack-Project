@@ -1,0 +1,36 @@
+,,2,3,4,5,6,7,8,9,10,11
+,5,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit
+,6,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit
+,7,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit
+,8,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit,Hit
+,9,Hit,Double Down,Double Down,Double Down,Double Down,Hit,Hit,Hit,Hit,Hit
+,10,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Hit,Hit
+,11,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Hit
+,12,Hit,Hit,Stand,Stand,Stand,Hit,Hit,Hit,Hit,Hit
+,13,Stand,Stand,Stand,Stand,Stand,Hit,Hit,Hit,Hit,Hit
+,14,Stand,Stand,Stand,Stand,Stand,Hit,Hit,Hit,Hit,Hit
+,15,Stand,Stand,Stand,Stand,Stand,Hit,Hit,Hit,Hit,Hit
+,16,Stand,Stand,Stand,Stand,Stand,Hit,Hit,Hit,Hit,Hit
+,17,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand
+,,,,,,,,,,,
+Ace,,2,3,4,5,6,7,8,9,10,11
+,2,Hit,Hit,Hit,Double Down,Double Down,Hit,Hit,Hit,Hit,Hit
+,3,Hit,Hit,Hit,Double Down,Double Down,Hit,Hit,Hit,Hit,Hit
+,4,Hit,Hit,Double Down,Double Down,Double Down,Hit,Hit,Hit,Hit,Hit
+,5,Hit,Hit,Double Down,Double Down,Double Down,Hit,Hit,Hit,Hit,Hit
+,6,Hit,Double Down,Double Down,Double Down,Double Down,Hit,Hit,Hit,Hit,Hit
+,7,Stand,Double Down,Double Down,Double Down,Double Down,Stand,Stand,Hit,Hit,Hit
+,8,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand
+,9,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand
+,,,,,,,,,,,
+Doubles,,2,3,4,5,6,7,8,9,10,11
+,2,Split,Split,Split,Split,Split,Split,Hit,Hit,Hit,Hit
+,3,Split,Split,Split,Split,Split,Split,Hit,Hit,Hit,Hit
+,4,Hit,Hit,Hit,Split,Split,Hit,Hit,Hit,Hit,Hit
+,5,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Double Down,Hit,Hit
+,6,Hit,Split,Split,Split,Split,Hit,Hit,Hit,Hit,Hit
+,7,Split,Split,Split,Split,Split,Split,Hit,Hit,Hit,Hit
+,8,Split,Split,Split,Split,Split,Split,Split,Split,Split,Split
+,9,Split,Split,Split,Split,Split,Stand,Split,Split,Stand,Stand
+,10,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Stand,Split,Split
+,A,Split,Split,Split,Split,Split,Split,Split,Split,Split,Split
